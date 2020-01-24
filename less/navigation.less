@@ -2,6 +2,8 @@
 
 nav {
 
+    
+
     border-bottom: 2px dashed @navigation-border;
     font-weight: bold;
     display: flex;
@@ -9,7 +11,9 @@ nav {
 
     @media @mobile{
         display: flex; 
-        justify-content: center;
+        flex-direction: column;
+        
+        
     }
 
 
@@ -19,7 +23,11 @@ nav {
         margin-left: 7%;
 
         @media @mobile{
-            margin-bottom: 20px;
+            font-size:3.2rem;
+            margin-left:37%;
+            width: 100%;
+            font-weight: normal;
+            
         }
     }
 
@@ -28,6 +36,16 @@ nav {
         width: 35%;
         margin-left: 9%;
 
+        @media @mobile {
+            display: flex;
+            flex-direction: center;
+            justify-content: space-evenly;
+            width: 90%;
+            margin-left: 0%;
+            margin-bottom: 2%;
+            
+        }
+
         a{
             margin-left: 9%;
             text-decoration: none;
@@ -35,6 +53,8 @@ nav {
             color: black;
         }
     }
+
+    
    
 
 

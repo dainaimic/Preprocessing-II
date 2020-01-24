@@ -1,6 +1,10 @@
 .home {
   font-weight: bold;
-  
+  @media @mobile{
+    margin: 2.5%;
+   
+
+  }
  
 
   img{
@@ -13,6 +17,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile{
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      flex-direction: column;
+    }
 
    
     

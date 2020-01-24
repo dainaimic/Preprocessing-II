@@ -177,7 +177,7 @@ nav {
 @media (max-width: 500px) {
   nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
 }
 nav h1 {
@@ -186,13 +186,26 @@ nav h1 {
 }
 @media (max-width: 500px) {
   nav h1 {
-    margin-bottom: 20px;
+    font-size: 3.2rem;
+    margin-left: 37%;
+    width: 100%;
+    font-weight: normal;
   }
 }
 nav .nav1 {
   margin-top: 3.2%;
   width: 35%;
   margin-left: 9%;
+}
+@media (max-width: 500px) {
+  nav .nav1 {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 0%;
+    margin-bottom: 2%;
+  }
 }
 nav .nav1 a {
   margin-left: 9%;
@@ -214,6 +227,11 @@ nav .nav1 a {
 .home {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .home {
+    margin: 2.5%;
+  }
+}
 .home img {
   margin-bottom: 2%;
 }
@@ -222,6 +240,13 @@ nav .nav1 a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
